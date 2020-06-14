@@ -1,0 +1,165 @@
+<!-- <?php 
+if(isset($_POST['submit'])){
+    $to = "mariano-miguel@hotmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $name = $_POST['nombre'];
+    $telefono = $_POST['telefono'];
+    $referido = $_POST['referido'];
+    $subject = "Nuevo email página Web";
+    $subject2 = "Copia email página web Luciana Feriol";
+    $message = $name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['mensaje'];
+    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['mensaje'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$referido,$mensaje,$headers);
+    mail($from,$subject2,$referido,$mensaje2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?> -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Luciana Feriol - Nutrición</title>
+</head>
+<body>
+	<a id="navigation" name="inicio"></a>
+	<nav class="topnav" id="myTopnav">
+		<a href="#inicio">Inicio</a>
+		<a href="#sobre-mi">Sobre mi</a>
+		<a href="#servicios">Servicios</a>
+		<a href="#ubicacion">Ubicación</a>
+		<a href="#contacto">Contacto</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+	</nav>
+	<div class="clear"></div>
+	<section>
+		<figure class="box-img">
+			<img src="./img/cover.jpg">
+			<figcaption></figcaption>
+		</figure>
+	</section>
+	<a id="navigation" name="sobre-mi"></a>
+	<section class="sobre-mi">
+		<figure class="sobre-mi-box">
+			<img class="sobre-mi-img" src="./img/luli.jpg">
+			<figcaption></figcaption>
+		</figure>
+		<article class="sobre-mi-copy">
+			<p>Hola! Mi nombre es Luciana Feriol, soy Licenciada en Nutrición recibida en la Fundación Barcelo, con Posgrado en Nutrición Deportiva, Antropometrista certificada en ISAK II y actualmente formándome en Psiconeuroinmunologia en España.
+			<p>La nutrición conciente, el contacto con la naturaleza, el poder de los alimentos reales, me hacen creer en que es posible reparar alimentaciones, amigarnos con las comidas y con nosotros.</p>
+			<p>Cómo trabajo:</p>
+			<p>La alimentación es un factor clave en la salud de las personas, para que ello suceda busco conocer en detalle la alimentación del paciente, su estilo de vida y crear un plan de alimentación que se adapte a sus gustos, necesidades, emociones y asi lograr su mejor versión.</p>
+		</article>
+	</section>
+	<a id="navigation" name="servicios"></a>
+	<section class="servicios">
+		<article class="servicios-card">
+			<figure>
+				<img class="servicios-img" src="./img/estudio.jpg">
+			<figcaption></figcaption>
+			</figure>
+				<p>Este método de prueba no invasivo ha demostrado ofrecer resultados completos. El mismo me ha permitido ayudar a muchos pacientes que vienen de un camino largo de frustraciones ante diferentes tratamientos en base a su sintomatología, ya sea de trastornos funcionales digestivos, cólon irritable, cefaleas, dolores de espalda, fatiga crónica, etc.</p>
+				<p>El estudio de intolerancias alimenticias y deficiencias nutricionales es el puntapie para que el paciente pueda tener una alimentación saludable teniendo en cuenta por sobre todo la salud intestinal.
+				</p>
+		</article>
+		<article class="servicios-card">
+			<figure>
+				<img class="servicios-img" src="./img/intestino.jpg">
+			<figcaption></figcaption>
+			</figure>
+				<p>Mediante asesoría en las consultas puedo acompañarte en el camino de la nutrición conciente y encontrar la alimentación que está hecha a medida para vos, teniendo en cuenta la sintomatología del paciente, sus hábitos y estilo de vida.</p>
+				<p>Buscando generar conocimiento de los alimentos naturales para sentirse bien y así lograr mejorar la relación con la comida, lograr la confianza en ella y sobretodo un equilibrio que te permita disfrutar y vivir plenamente.
+				</p>
+		</article>
+		<article class="servicios-card">
+			<figure>
+				<img class="servicios-img" src="./img/pacientes.jpg">
+			<figcaption></figcaption>
+			</figure>
+				<p>Trabajo con pasión para lograr que los pacientes tomen conciencia de su alimentación y así cambiar en base a sus objetivos deseados. Evalúo su composición corporal completa mediante una antropometría la cual me permite ver el punto de partida del atleta (amateur o profesional) y planteamos objetivos más claros e individuales según el tipo de deporte que practica.
+				</p>
+		</article>
+	</section>
+	<section class="online">
+		<article class="online-copy">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
+		</article>
+		<button><a href="" class="href"></a>Botón</button>
+	</section>
+	<a id="navigation" name="ubicacion"></a>
+	<section class="ubicacion">
+		<article class="ubicacion-maps">
+			<iframe src="https://www.google.com/maps/d/embed?mid=1xZO9vNEbyAVOcZZM_apY4ASmPc9c98dL" width="100%" height="100%"></iframe>
+		</article>
+		<article class="ubicacion-copy">
+			<h2>Cómo llegar:</h2>
+			<p>Subte: Línea D - Estación Juramento / Congreso del Tucumán</p>
+			<p>Colectivos: 29, 59, 60, 63, 67, 68, 107, 114, 133, 151, 152, 168, 184.</p>
+			<p>Tren: Línea Mitre - Estación Belgrano C</p>
+		</article>
+	</section>
+	<a id="navigation" name="contacto"></a>
+	<section class="contacto">
+		<article>
+			<form class="contacto-form" action="" method="post">
+				<h3>Contacto</h3>
+				<fieldset>
+				  <input placeholder="Nombre completo" type="text" name="nombre"  tabindex="1" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" required>
+				</fieldset>
+				<fieldset>
+				  <input placeholder="Correo Electrónico" type="email" name="email"  tabindex="2" data-rule="email" data-msg="Por favor ingrese un email válido" required>
+				</fieldset>
+				<fieldset>
+				  <input placeholder="Celular" type="tel" name="telefono"  inputmode="decimal" tabindex="3" data-rule="minlen:7" data-msg="Por favor ingrese un telefono válido" required>
+				</fieldset>
+				<fieldset>
+					<select name="referido" tabindex="4">
+                        <option value="">¿Cómo me conociste?</option>
+                        <option>Google</option>
+                        <option>Referidos</option>
+                        <option>Instagram</option>
+                        <option>Facebook</option>
+                        <option>Youtube</option>
+                    </select>
+				</fieldset>
+				<fieldset>
+				  <textarea placeholder="¿Cuáles son tus objetivos o metas?"  name="mensaje" tabindex="5" required></textarea>
+				</fieldset>
+				<fieldset>
+				  <button name="submit" type="submit" class="contacto-submit" data-submit="...Enviando">Enviar</button>
+				</fieldset>
+			</form>
+		</article>
+	</section>
+	<footer class="footer">
+		<a href="https://www.facebook.com/luliferiol/" target="_blank"><img class="icons" src="./img/icon-facebook.png"></a>
+		<a href="https://wa.me/541159365177" target="_blank"><img class="icons" src="./img/icon-whatsapp.png"></a>
+		<a href="https://www.instagram.com/lucianaferiol/" target="_blank"><img class="icons" src="./img/icon-instagram.png"></a>
+		<a href="https://www.youtube.com/channel/UCHk1lQ-kvLAnCevJQ7Y7gVw" target="_blank"><img class="icons" src="./img/icon-youtube.png"></a>
+	</footer>
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+	</script>
+</body>
+</html>

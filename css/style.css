@@ -1,0 +1,459 @@
+* {
+  font-family: 'Gotu', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.body, figure {
+  margin: 0 auto;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+
+}
+
+.clear {
+  width:100%;
+  height: 44px;
+  display: block;
+}
+
+
+ul{
+  padding-inline-start: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #D5FACF;
+  width: 100%;
+  position: fixed;
+  z-index: 5
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a:active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+.box-img img {
+  width:100%;
+  height: auto;
+}
+
+.sobre-mi {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding:5%;
+}
+
+.sobre-mi-box {
+  width: 25%;
+}
+
+.sobre-mi-img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+  margin:auto;
+  box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.sobre-mi-img:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+
+.sobre-mi-copy {
+  width:40%;
+  text-align: center;
+  padding-left: 3%;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: center;
+  align-content: center;
+  padding: 5%;
+}
+
+.servicios-card {
+  margin: 3%;
+  padding: 3%;
+  box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.servicios-img {
+  width: 100%;
+}
+
+.servicios-card > p {
+  text-align: center;
+  line-height: normal;
+}
+
+.online {
+  margin: 3%;
+  padding:5%;
+}
+
+.online-copy {
+  text-align: center;
+}
+
+.online button {
+  display: block;
+  margin: auto;
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:#91E78C; 
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: 'Gotu', sans-serif;
+}
+
+.online button:hover {
+  background-color: #4BA746;
+}
+
+.online button:active {
+  background-color: #4BA746;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.ubicacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+  padding: 3%;
+}
+
+.ubicacion-maps {
+  width: 40%;
+  height: 450px;
+  margin: 1.5%;
+}
+.ubicacion-copy {
+  width: 35%;
+  background-color: #D5FACF;
+  padding: 3%;
+  margin: 2.5%;
+  transform: rotate(-5deg);
+}
+
+.ubicacion-copy * {
+  transform: rotate(5deg);
+  line-height: 1.5;
+}
+
+.ubicacion-copy > p {
+  font-size: 1em;
+}
+
+.contacto-form input[type="text"],
+.contacto-form input[type="email"],
+.contacto-form input[type="tel"],
+.contacto-form input[type="url"],
+.contacto-form textarea,
+.contacto-form select,
+.contacto-form button[type="submit"] { 
+  font:400 12px/16px 'Gotu', "Open Sans", Helvetica, Arial, sans-serif;
+ }
+
+
+.contacto-form {
+  width: 100%;
+  background-image: url("../img/contact.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 3% 0;
+}
+
+.contacto-form h3 {
+  color: black;
+  display: block;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
+
+form fieldset {
+  border: medium none;
+  max-width: 35%;
+  padding: 0;
+  margin: auto;
+}
+
+.contacto-form input[type="text"],
+.contacto-form input[type="email"],
+.contacto-form input[type="tel"],
+.contacto-form select,
+.contacto-form textarea {
+  width:100%;
+  border:1px solid #CCC;
+  background:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+}
+
+.contacto-form input[type="text"]:hover,
+.contacto-form input[type="email"]:hover,
+.contacto-form input[type="tel"]:hover,
+.contacto-form textarea:hover {
+  -webkit-transition:border-color 0.3s ease-in-out;
+  -moz-transition:border-color 0.3s ease-in-out;
+  transition:border-color 0.3s ease-in-out;
+  border:1px solid #AAA;
+}
+
+.contacto-form textarea {
+  height:100px;
+  max-width:100%;
+  resize:none;
+}
+
+.contacto-form button[type="submit"] {
+  cursor:pointer;
+  width:40%;
+  border:none;
+  background:#91E78C;
+  color:black;
+  padding:3%;
+  font-size:15px;
+}
+
+.contacto-form button[type="submit"]:hover {
+  background:#4BA746;
+  color:#FFF;
+  -webkit-transition:background 0.3s ease-in-out;
+  -moz-transition:background 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+}
+
+.contacto-form button[type="submit"]:active { 
+  box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  -o-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  outline:0;
+  border:1px solid #999;
+}
+::-webkit-input-placeholder {
+  color:#888;
+}
+:-moz-placeholder {
+  color:#888;
+}
+::-moz-placeholder {
+  color:#888;
+}
+:-ms-input-placeholder {
+  color:#888;
+}
+.contacto-submit {
+  display:block;
+  margin:auto;
+}
+.footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #D5FACF;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+  width: 3%;
+  padding: 1%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.footer img {
+  width: 100%;
+}
+
+@media only screen and  (max-width: 1200px) {
+
+  .topnav a {
+    font-size: 1.1em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  .servicios {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 4%;
+  }
+  .online button {
+    font-size: 0.8em;
+  }
+
+}
+
+@media only screen and  (max-width: 992px) {
+
+  .topnav a {
+    font-size: 0.9em;
+  }
+  p {
+    font-size: 0.7em;
+  }
+  .servicios {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+  .ubicacion-maps {
+    height:335px;
+  }
+  .footer a {
+    width: 4%;
+    padding: 1%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    width: 100%;
+    position: fixed;
+    z-index: 5
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .sobre-mi {
+    flex-wrap: wrap;
+  }
+  .sobre-mi-box {
+    width: 50%;
+    margin:auto;
+  }
+  .sobre-mi-copy {
+    width: 80%;
+    padding-top: 5%;
+    padding-left:0;
+    margin:auto;
+  }
+  .servicios {
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+  .ubicacion {
+    display: block;
+  }
+  .ubicacion-maps {
+    width: 85%;
+    margin:auto;
+  }
+  .ubicacion-copy {
+    width: 50%;
+    margin: 5% auto;
+  }
+  form fieldset {
+    max-width: 45%;
+  }
+  .contacto-form button[type="submit"] {
+    width: 60%;
+  }
+  .contacto-form {
+  background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  
+  .servicios {
+    width: 90%;
+  }
+  form fieldset {
+    max-width: 65%;
+  }
+  .footer a {
+    width: 10%;
+    margin: 0;
+    padding: 2% 3% 2% 3%;
+  }
+}
+
+
