@@ -1,23 +1,3 @@
-<!-- <?php 
-if(isset($_POST['submit'])){
-    $to = "mariano-miguel@hotmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $name = $_POST['nombre'];
-    $telefono = $_POST['telefono'];
-    $referido = $_POST['referido'];
-    $subject = "Nuevo email página Web";
-    $subject2 = "Copia email página web Luciana Feriol";
-    $message = $name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['mensaje'];
-    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['mensaje'];
-
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$referido,$mensaje,$headers);
-    mail($from,$subject2,$referido,$mensaje2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    }
-?> -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -28,7 +8,8 @@ if(isset($_POST['submit'])){
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Luciana Feriol - Nutrición</title>
+	<title>Luciana Feriol | Nutrición Gastrointestinal y Deportiva</title>
+	<meta name="description" content="Nutrición Integral: Especialista en trastornos funcionales digestivos y Deportiva. Antropometrista ISAK II">
 </head>
 <body>
 	<a id="navigation" name="inicio"></a>
@@ -41,16 +22,19 @@ if(isset($_POST['submit'])){
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 	</nav>
 	<div class="clear"></div>
-	<section>
-		<figure class="box-img">
-			<img src="./img/cover.jpg">
-			<figcaption></figcaption>
-		</figure>
+	<section class="cover">
+		<article class="cover-img">
+			<figure class="cover-box">
+				<img class="desktop" alt="Una mujer tomando notas, al lado hay una notebook, un centímetro y verduras para representar la atención del consultorio bajo una mirada integral saludable" src="./img/cover.jpg">
+				<img class="mobile" alt="Una mujer tomando notas, al lado hay una notebook, un centímetro y verduras para representar la atención del consultorio bajo una mirada integral saludable" src="./img/cover-m.jpg">
+				<figcaption></figcaption>
+			</figure>
+		</article>		
 	</section>
 	<a id="navigation" name="sobre-mi"></a>
 	<section class="sobre-mi">
 		<figure class="sobre-mi-box">
-			<img class="sobre-mi-img" src="./img/luli.jpg">
+			<img class="sobre-mi-img" alt="Luciana después de una carrera" src="./img/luli.jpg">
 			<figcaption></figcaption>
 		</figure>
 		<article class="sobre-mi-copy">
@@ -64,7 +48,7 @@ if(isset($_POST['submit'])){
 	<section class="servicios">
 		<article class="servicios-card">
 			<figure>
-				<img class="servicios-img" src="./img/estudio.jpg">
+				<img class="servicios-img" alt="Folleto del Estudio de intolerancias alimenticias y deficiencias nutricionales" src="./img/estudio.jpg">
 			<figcaption></figcaption>
 			</figure>
 				<p>Este método de prueba no invasivo ha demostrado ofrecer resultados completos. El mismo me ha permitido ayudar a muchos pacientes que vienen de un camino largo de frustraciones ante diferentes tratamientos en base a su sintomatología, ya sea de trastornos funcionales digestivos, cólon irritable, cefaleas, dolores de espalda, fatiga crónica, etc.</p>
@@ -73,7 +57,7 @@ if(isset($_POST['submit'])){
 		</article>
 		<article class="servicios-card">
 			<figure>
-				<img class="servicios-img" src="./img/intestino.jpg">
+				<img class="servicios-img" alt="Un abdomen, con un gráfico de un aparato digestivo y distintos alimentos" src="./img/intestino.jpg">
 			<figcaption></figcaption>
 			</figure>
 				<p>Mediante asesoría en las consultas puedo acompañarte en el camino de la nutrición conciente y encontrar la alimentación que está hecha a medida para vos, teniendo en cuenta la sintomatología del paciente, sus hábitos y estilo de vida.</p>
@@ -82,14 +66,14 @@ if(isset($_POST['submit'])){
 		</article>
 		<article class="servicios-card">
 			<figure>
-				<img class="servicios-img" src="./img/pacientes.jpg">
+				<img class="servicios-img" alt="Retrato con uno de sus tantos pacientes, en este caso Lucas Pratto, futbolista de River Plate" src="./img/pacientes.jpg">
 			<figcaption></figcaption>
 			</figure>
 				<p>Trabajo con pasión para lograr que los pacientes tomen conciencia de su alimentación y así cambiar en base a sus objetivos deseados. Evalúo su composición corporal completa mediante una antropometría la cual me permite ver el punto de partida del atleta (amateur o profesional) y planteamos objetivos más claros e individuales según el tipo de deporte que practica.
 				</p>
 		</article>
 	</section>
-	<section class="online">
+<!-- 	<section class="online">
 		<article class="online-copy">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
@@ -99,7 +83,7 @@ if(isset($_POST['submit'])){
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
 		</article>
 		<button><a href="" class="href"></a>Botón</button>
-	</section>
+	</section> -->
 	<a id="navigation" name="ubicacion"></a>
 	<section class="ubicacion">
 		<article class="ubicacion-maps">
@@ -115,7 +99,7 @@ if(isset($_POST['submit'])){
 	<a id="navigation" name="contacto"></a>
 	<section class="contacto">
 		<article>
-			<form class="contacto-form" action="" method="post">
+			<form class="contacto-form" action="form.php" method="post">
 				<h3>Contacto</h3>
 				<fieldset>
 				  <input placeholder="Nombre completo" type="text" name="nombre"  tabindex="1" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" required>
@@ -149,7 +133,7 @@ if(isset($_POST['submit'])){
 		<a href="https://www.facebook.com/luliferiol/" target="_blank"><img class="icons" src="./img/icon-facebook.png"></a>
 		<a href="https://wa.me/541159365177" target="_blank"><img class="icons" src="./img/icon-whatsapp.png"></a>
 		<a href="https://www.instagram.com/lucianaferiol/" target="_blank"><img class="icons" src="./img/icon-instagram.png"></a>
-		<a href="https://www.youtube.com/channel/UCHk1lQ-kvLAnCevJQ7Y7gVw" target="_blank"><img class="icons" src="./img/icon-youtube.png"></a>
+		<a href="https://www.youtube.com/channel/UCHk1lQ-kvLAnCevJQ7Y7gVw/videos" target="_blank"><img class="icons" src="./img/icon-youtube.png"></a>
 	</footer>
 	<script>
 	function myFunction() {

@@ -56,9 +56,16 @@ ul{
 }
 
 
-.box-img img {
-  width:100%;
+.cover-img {
+  width: 100%;
+}
+.cover-box img {
+  width: 100%;
   height: auto;
+}
+
+.mobile {
+  display: none;
 }
 
 .sobre-mi {
@@ -400,6 +407,13 @@ form fieldset {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
   }
   .sobre-mi {
     flex-wrap: wrap;
