@@ -3,8 +3,8 @@
 <head>
 	<link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -12,7 +12,7 @@
 	<meta name="description" content="Nutrición Integral: Especialista en trastornos funcionales digestivos y Deportiva. Antropometrista ISAK II">
 	<meta name="keywords" content="nutricion, saludable, integral, holistica, deportiva, gastrointestinal, trastornos digestivos, intolerancias alimenticias, deficiencias nutricionales, trastornos funcionales digestivos, antropometrias, isak, psiconeuroinmunologia, pni, vegano, vegetariano, inflamacion abdominal"/>
 	<meta name="subject" content="Nutrición Integral: Gastrointestinal y Deportiva">
-	<meta name="language" content="ES">
+	<meta name="language" content="es_ES">
 	<meta name="robots" content="index,follow" />
 	<meta name="url" content="https://www.lucianaferiol.com">
 	<meta name="identifier-URL" content="https://www.lucianaferiol.com">
@@ -22,17 +22,17 @@
 	<meta http-equiv="Expires" content="0">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-Control" content="no-cache">
-	<meta name="og:title" content="Luciana Feriol | Nutrición Gastrointestinal y Deportiva"/>
-	<meta name="og:url" content="https://www.lucianaferiol.com"/>
-	<meta name="og:image" content="./img/cover.jpg"/>
-	<meta name="og:description" content="Nutrición Integral: Especialista en trastornos funcionales digestivos y Deportiva. Antropometrista ISAK II"/>
+	<meta property="og:title" content="Luciana Feriol | Nutrición Gastrointestinal y Deportiva"/>
+	<meta property="og:url" content="https://www.lucianaferiol.com"/>
+	<meta property="og:image" content="./img/cover.jpg"/>
+	<meta property="og:description" content="Nutrición Integral: Especialista en trastornos funcionales digestivos y Deportiva. Antropometrista ISAK II"/>
 </head>
 <body>
-	<a id="navigation" name="inicio"></a>
 	<nav class="topnav" id="myTopnav">
-		<a href="#inicio">Inicio</a>
+		<a href="index.html">Inicio</a>
 		<a href="#sobre-mi">Sobre mi</a>
 		<a href="#servicios">Servicios</a>
+		<a href="#notas-recetas">Notas y Recetas</a>
 		<a href="#ubicacion">Ubicación</a>
 		<a href="#contacto">Contacto</a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
@@ -42,12 +42,15 @@
 		<article class="cover-img">
 			<figure class="cover-box">
 				<img class="desktop" alt="Una mujer tomando notas, al lado hay una notebook, un centímetro y verduras para representar la atención del consultorio bajo una mirada integral saludable" src="./img/cover.jpg">
-				<img class="mobile" alt="Una mujer tomando notas, al lado hay una notebook, un centímetro y verduras para representar la atención del consultorio bajo una mirada integral saludable" src="./img/cover-m.jpg">
+				<img class="mobile" alt="Una mujer tomando notas, al lado hay una notebook y un centímetro para representar la atención del consultorio bajo una mirada integral saludable" src="./img/cover-m.jpg">
 				<figcaption></figcaption>
 			</figure>
 		</article>		
 	</section>
 	<a id="navigation" name="sobre-mi"></a>
+	<article class="header">
+		<h2>SOBRE MI</h2>
+	</article>		
 	<section class="sobre-mi">
 		<figure class="sobre-mi-box">
 			<img class="sobre-mi-img" alt="Luciana después de una carrera" src="./img/luli.jpg">
@@ -61,11 +64,15 @@
 		</article>
 	</section>
 	<a id="navigation" name="servicios"></a>
+	<article class="header">
+		<h2>SERVICIOS</h2>
+	</article>	
 	<section class="servicios">
 		<article class="servicios-card">
 			<figure>
 				<img class="servicios-img" alt="Folleto del Estudio de intolerancias alimenticias y deficiencias nutricionales" src="./img/estudio.jpg">
 			<figcaption></figcaption>
+			<h3>Test Intolerancias y Deficiencias</h3>
 			</figure>
 				<p>Este método de prueba no invasivo ha demostrado ofrecer resultados completos. El mismo me ha permitido ayudar a muchos pacientes que vienen de un camino largo de frustraciones ante diferentes tratamientos en base a su sintomatología, ya sea de trastornos funcionales digestivos, cólon irritable, cefaleas, dolores de espalda, fatiga crónica, etc.</p>
 				<p>El estudio de intolerancias alimenticias y deficiencias nutricionales es el puntapie para que el paciente pueda tener una alimentación saludable teniendo en cuenta por sobre todo la salud intestinal.
@@ -75,6 +82,7 @@
 			<figure>
 				<img class="servicios-img" alt="Un abdomen, con un gráfico de un aparato digestivo y distintos alimentos" src="./img/intestino.jpg">
 			<figcaption></figcaption>
+			<h3>Nutrición Integral</h3>
 			</figure>
 				<p>Mediante asesoría en las consultas puedo acompañarte en el camino de la nutrición conciente y encontrar la alimentación que está hecha a medida para vos, teniendo en cuenta la sintomatología del paciente, sus hábitos y estilo de vida.</p>
 				<p>Buscando generar conocimiento de los alimentos naturales para sentirse bien y así lograr mejorar la relación con la comida, lograr la confianza en ella y sobretodo un equilibrio que te permita disfrutar y vivir plenamente.
@@ -84,30 +92,113 @@
 			<figure>
 				<img class="servicios-img" alt="Retrato con uno de sus tantos pacientes, en este caso Lucas Pratto, futbolista de River Plate" src="./img/pacientes.jpg">
 			<figcaption></figcaption>
+			<h3>Deporte</h3>
 			</figure>
 				<p>Trabajo con pasión para lograr que los pacientes tomen conciencia de su alimentación y así cambiar en base a sus objetivos deseados. Evalúo su composición corporal completa mediante una antropometría la cual me permite ver el punto de partida del atleta (amateur o profesional) y planteamos objetivos más claros e individuales según el tipo de deporte que practica.
 				</p>
 		</article>
-	</section>
-<!-- 	<section class="online">
-		<article class="online-copy">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, excepturi recusandae consequatur vitae harum, facere quis atque ea earum nam optio, veritatis non eius est assumenda enim ab beatae!</p>
+		<article class="servicios-card">
+			<figure>
+				<img class="servicios-img" alt="Representación de la consulta online" src="./img/luli-online.jpg">
+			<figcaption></figcaption>
+			<h3>Consultorio Online</h3>
+			</figure>
+				<p>Vivís lejos o sos del interior, no tenés tiempo, también podés tener tu consulta online. Las consultas son iguales a las presenciales, vamos a establecer objetivos que se ajustarán a tus características, necesidades, requerimientos, gustos, pero principalmente nos enfocaremos en MEJORAR TU CALIDAD DE VIDA a través de la alimentción. Se realizan a partir de videollamada.
+				</p>
 		</article>
-		<button><a href="" class="href"></a>Botón</button>
-	</section> -->
+	</section>
+	<a id="navigation" name="notas-recetas"></a>
+	<article class="header">
+		<h2>NOTAS Y RECETAS</h2>
+	</article>	
+	<section class="notas">
+		<section class="notas-box">
+			<article class="notas-card">
+				<figure>
+					<img alt="" src="./img/recetas.jpg">
+					<figcaption></figcaption>
+				</figure>
+				<article class="card-copy">
+					<p>Todo me cae mal</p>
+				</article>
+			</article>
+			<article class="notas-card">
+				<figure>
+					<img alt="" src="./img/recetas.jpg">
+					<figcaption></figcaption>
+				</figure>
+				<article class="card-copy">
+					<p>Alimentación Antiinflamatoria</p>
+				</article>				
+			</article>
+			<article class="notas-card">
+				<figure>
+					<img alt="" src="./img/recetas.jpg">
+					<figcaption></figcaption>
+				</figure>
+				<article class="card-copy">
+					<p>Adios al Trigo</p>
+				</article>								
+			</article>
+			<article class="notas-card">
+				<figure>
+					<img alt="" src="./img/recetas.jpg">
+					<figcaption></figcaption>
+				</figure>
+				<article class="card-copy">
+					<p>Adiós a los lácteos</p>
+				</article>
+			</article>
+			<article class="notas-card">
+				<figure>
+					<img alt="" src="./img/recetas.jpg">
+					<figcaption></figcaption>
+				</figure>
+				<article class="card-copy">
+					<p>Brownie de Batata</p>
+				</article>			
+			</article>
+			<article class="notas-card">
+				<figure>
+					<img alt="" src="./img/recetas.jpg">
+					<figcaption></figcaption>
+				</figure>
+				<article class="card-copy">
+					<p>Masa de Tarta</p>
+				</article>
+			</article>
+			<article class="notas-card">
+				<figure>
+					<img alt="" src="./img/recetas.jpg">
+					<figcaption></figcaption>
+				</figure>
+				<article class="card-copy">
+					<p>Budín Dulce de Porotos</p>
+				</article>
+			</article>
+			<article class="notas-card">
+				<figure>
+					<img alt="" src="./img/recetas.jpg">
+					<figcaption></figcaption>
+				</figure>
+				<article class="card-copy">
+					<p>Granola</p>
+				</article>
+			</article>
+		</section>
+		<button><a href="notas-recetas.html" class="href">VER MÁS</a></button>
+	</section>
 	<a id="navigation" name="ubicacion"></a>
+	<article class="header">
+		<h2>UBICACIÓN</h2>
+	</article>	
 	<section class="ubicacion">
 		<article class="ubicacion-maps">
 			<iframe src="https://www.google.com/maps/d/embed?mid=1xZO9vNEbyAVOcZZM_apY4ASmPc9c98dL" width="100%" height="100%"></iframe>
 		</article>
 		<article class="ubicacion-copy">
-			<h2>Cómo llegar:</h2>
-			<p>Subte: Línea D - Estación Juramento / Congreso del Tucumán</p>
+			<h3>Cómo llegar:</h3>
+			<p>Subte: Línea D - Estación Juramento / Congreso de Tucumán</p>
 			<p>Colectivos: 29, 59, 60, 63, 67, 68, 107, 114, 133, 151, 152, 168, 184.</p>
 			<p>Tren: Línea Mitre - Estación Belgrano C</p>
 		</article>
@@ -115,8 +206,8 @@
 	<a id="navigation" name="contacto"></a>
 	<section class="contacto">
 		<article>
+			<h2>CONTACTO</h2>
 			<form class="contacto-form" action="form.php" method="post">
-				<h3>Contacto</h3>
 				<fieldset>
 				  <input placeholder="Nombre completo" type="text" name="nombre"  tabindex="1" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" required>
 				</fieldset>
@@ -146,10 +237,10 @@
 		</article>
 	</section>
 	<footer class="footer">
-		<a href="https://www.facebook.com/luliferiol/" target="_blank"><img class="icons" src="./img/icon-facebook.png"></a>
-		<a href="https://wa.me/541159365177" target="_blank"><img class="icons" src="./img/icon-whatsapp.png"></a>
-		<a href="https://www.instagram.com/lucianaferiol/" target="_blank"><img class="icons" src="./img/icon-instagram.png"></a>
-		<a href="https://www.youtube.com/channel/UCHk1lQ-kvLAnCevJQ7Y7gVw/videos" target="_blank"><img class="icons" src="./img/icon-youtube.png"></a>
+		<a href="https://www.facebook.com/luliferiol/" target="_blank"><img alt="Ícono de Facebook" class="icons" src="./img/icon-facebook.png"></a>
+		<a href="https://wa.me/541159365177" target="_blank"><img alt="Ícono de Whatsapp" class="icons" src="./img/icon-whatsapp.png"></a>
+		<a href="https://www.instagram.com/lucianaferiol/" target="_blank"><img alt="Ícono de Instagram" class="icons" src="./img/icon-instagram.png"></a>
+		<a href="https://www.youtube.com/channel/UCHk1lQ-kvLAnCevJQ7Y7gVw/videos?view=0&sort=p&flow=grid" target="_blank"><img alt="Ícono de Youtube" class="icons" src="./img/icon-youtube.png"></a>
 	</footer>
 	<script>
 	function myFunction() {

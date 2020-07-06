@@ -12,6 +12,22 @@
 
 }
 
+.header {
+  text-align: center;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+#navigation {
+  height: 51px;
+  display: block;
+}
+
 .clear {
   width:100%;
   height: 44px;
@@ -74,6 +90,7 @@ ul{
   justify-content: center;
   align-items: center;
   padding:5%;
+  margin-bottom: 5%;
 }
 
 .sobre-mi-box {
@@ -112,10 +129,11 @@ p {
 
 .servicios {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   justify-content: center;
   align-content: center;
-  padding: 5%;
+  padding: 2%;
+  margin-bottom: 4%;
 }
 
 .servicios-card {
@@ -132,21 +150,43 @@ p {
   width: 100%;
 }
 
+.servicios-card h3 {
+  text-align: center;
+}
 .servicios-card > p {
   text-align: center;
   line-height: normal;
+  font-size: 0.9em;
 }
 
-.online {
-  margin: 3%;
-  padding:5%;
+.notas-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10% 3% 10%;
 }
 
-.online-copy {
+.notas {
+  margin-bottom: 7%;
+}
+.notas-card {
+  width: 15%;
+  padding: 2% 3%;
   text-align: center;
 }
+.notas-card img {
+  width: 100%;
+  border-radius: 50%;
+}
 
-.online button {
+.notas-card .card-copy {
+  padding: 1% 1%;
+}
+.notas-card .card-copy p {
+  font-size: 1em;
+}
+
+.notas button {
   display: block;
   margin: auto;
   padding: 15px 25px;
@@ -155,7 +195,6 @@ p {
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
   background-color:#91E78C; 
   border: none;
   border-radius: 15px;
@@ -163,14 +202,19 @@ p {
   font-family: 'Gotu', sans-serif;
 }
 
-.online button:hover {
+.notas button:hover {
   background-color: #4BA746;
 }
 
-.online button:active {
+.notas button:active {
   background-color: #4BA746;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.notas button a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .ubicacion {
@@ -215,7 +259,7 @@ p {
  }
 
 
-.contacto-form {
+.contacto {
   width: 100%;
   background-image: url("../img/contact.jpg");
   background-position: center center;
@@ -228,11 +272,9 @@ p {
   padding: 3% 0;
 }
 
-.contacto-form h3 {
+.contacto h2 {
   color: black;
   display: block;
-  font-size: 1.5em;
-  font-weight: 400;
   text-align: center;
 }
 
@@ -343,6 +385,10 @@ form fieldset {
 }
 
 @media only screen and  (max-width: 1200px) {
+  
+  h2 {
+    font-size: 1.4em;
+  }
 
   .topnav a {
     font-size: 1.1em;
@@ -350,11 +396,22 @@ form fieldset {
   p {
     font-size: 0.8em;
   }
+
   .servicios {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 4%;
+    grid-template-columns: repeat(auto-fit, minmax(234px, 1fr));
   }
-  .online button {
+
+  .notas-box {
+    padding: 0 5% 3% 5%;
+  }
+
+  .notas-box {
+    padding: 0 5% 3% 5%;
+  }
+  .notas-card {
+    width: 18%;
+  }
+  .notas button {
     font-size: 0.8em;
   }
 
@@ -369,7 +426,15 @@ form fieldset {
     font-size: 0.7em;
   }
   .servicios {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    padding: 5%;
+  }
+  .notas-card {
+    width: 21%;
+    padding: 2% 5%;
+  }
+  .notas-card .card-copy p {
+    font-size: 0.9em;
   }
   .ubicacion-maps {
     height:335px;
@@ -396,7 +461,7 @@ form fieldset {
   .topnav.responsive {
     width: 100%;
     position: fixed;
-    z-index: 5
+    z-index: 5;
   }
   .topnav.responsive .icon {
     position: absolute;
@@ -431,7 +496,14 @@ form fieldset {
   .servicios {
     display: block;
     margin: auto;
-    width: 70%;
+    width: 80%;
+  }
+  .notas-card {
+    width: 25%;
+    padding: 2% 3%;
+  }
+  .notas-card .card-copy p {
+    font-size: 0.8em;
   }
   .ubicacion {
     display: block;
@@ -459,6 +531,9 @@ form fieldset {
   
   .servicios {
     width: 90%;
+  }
+  .notas-card {
+    width: 40%;
   }
   form fieldset {
     max-width: 65%;
