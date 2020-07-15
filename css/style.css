@@ -44,7 +44,7 @@ ul{
   background-color: #D5FACF;
   width: 100%;
   position: fixed;
-  z-index: 5
+  z-index: 5;
 }
 
 .topnav a {
@@ -166,7 +166,7 @@ p {
   padding: 0 10% 3% 10%;
 }
 
-.notas {
+.notas-section {
   margin-bottom: 7%;
 }
 .notas-card {
@@ -186,7 +186,7 @@ p {
   font-size: 1em;
 }
 
-.notas button {
+.notas-section button {
   display: block;
   margin: auto;
   padding: 15px 0px;
@@ -202,17 +202,17 @@ p {
   font-family: 'Gotu', sans-serif;
 }
 
-.notas button:hover {
+.notas-section button:hover {
   background-color: #4BA746;
 }
 
-.notas button:active {
+.notas-section button:active {
   background-color: #4BA746;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-.notas button a {
+.notas-section button a {
   text-decoration: none;
   color: #fff;
   padding: 12px 25px;
