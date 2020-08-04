@@ -1,0 +1,17 @@
+.header h1 {
+  margin: 5% 0;
+}
+.notas-copy {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  line-height: 1.4;
+}
+.notas-img {
+  width: 45%;
+  margin: 5% auto;
+}
+.notas-img img {
+  width:100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+}
