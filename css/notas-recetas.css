@@ -99,17 +99,20 @@
 }
 
 .texto a {
-  color: white;
+  color: black;
   border: none;
   text-decoration: none;
   cursor: pointer;
   display: block;
   width: 100%;
   height: auto;
+  text-shadow: 1px 1px #F0F0F0;
+  font-weight: bold;
 }
 
 .texto a:hover {
-  color: #D5FACF;
+  color: #64B058;
+
 }
 
 /*RECETAS*/
