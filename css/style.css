@@ -79,11 +79,6 @@ ul{
   width: 100%;
   height: auto;
 }
-
-.mobile {
-  display: none;
-}
-
 .sobre-mi {
   display: flex;
   flex-wrap: nowrap;
@@ -507,13 +502,6 @@ form fieldset {
     float: none;
     display: block;
     text-align: left;
-  }
-
-  .desktop {
-    display: none;
-  }
-  .mobile {
-    display: block;
   }
   .sobre-mi {
     flex-wrap: wrap;

@@ -44,8 +44,11 @@
 	<section class="cover">
 		<article class="cover-img">
 			<figure class="cover-box">
-				<img loading="lazy" class="desktop" alt="Una mujer tomando notas, al lado hay una notebook, un centímetro y verduras para representar la atención del consultorio bajo una mirada integral saludable" src="./img/cover.jpg">
-				<img loading="lazy" class="mobile" alt="Una mujer tomando notas, al lado hay una notebook y un centímetro para representar la atención del consultorio bajo una mirada integral saludable" src="./img/cover-m.jpg">
+				<picture>
+				  <source media="(max-width: 768px)" srcset="./img/cover-m.jpg">
+				  <source media="(min-width: 769px)" srcset="./img/cover.jpg">
+				  <img src="./img/cover.jpg" alt="Una mujer tomando notas, al lado hay una notebook y un centímetro para representar la atención del consultorio bajo una mirada integral saludable">
+				</picture>
 				<figcaption></figcaption>
 			</figure>
 		</article>
@@ -118,7 +121,7 @@
 		<section class="notas-box">
 			<article class="notas-card">
 				<figure>
-					<img loading="lazy" alt="Todo me cae mal" src="./img/notas-recetas/todo-me-cae-mal-1-1.png">
+					<img loading="lazy" alt="Todo me cae mal" src="./img/notas-recetas/todo-me-cae-mal-1-1.jpg">
 					<figcaption></figcaption>
 				</figure>
 				<article class="card-copy">
@@ -145,7 +148,7 @@
 			</article>
 			<article class="notas-card">
 				<figure>
-					<img loading="lazy" alt="Estrés" src="./img/notas-recetas/estres-1-1.png">
+					<img loading="lazy" alt="Estrés" src="./img/notas-recetas/estres-1-1.jpg">
 					<figcaption></figcaption>
 				</figure>
 				<article class="card-copy">
