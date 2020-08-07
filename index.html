@@ -233,34 +233,34 @@
 			<h2>CONTACTO</h2>
 			<form class="contacto-form"  action="https://formspree.io/xbjzwnrq" method="post">
 				<fieldset>
-					<label for='nombre'>Nombre completo</label>
-				  	<input type="text" name='nombre' placeholder="Nombre Apellido" data-rule="minlen:4" data-msg="Por favor ingrese su nombre completo" required>
+					<label for="nombre">Nombre completo</label>
+				  	<input id="nombre" type="text" name='nombre' placeholder="Nombre Apellido" data-rule="minlen:4" data-msg="Por favor ingrese su nombre completo" required>
 				</fieldset>
 				<fieldset>
-					<label for='email' >Correo Electrónico</label>
-					<input type="text" name='email' placeholder="tu@email.com" data-rule="email" data-msg="Por favor ingrese un email válido" required>
+					<label for="email" >Correo Electrónico</label>
+					<input id="email" type="text" name="email" placeholder="tu@email.com" data-rule="email" data-msg="Por favor ingrese un email válido" required>
 				</fieldset>
 				<fieldset>
-					<label for='telefono' >Celular</label>
-				  	<input type="tel" name='telefono' inputmode="decimal" placeholder="011-4444-9999" data-rule="minlen:7" data-msg="Por favor ingrese un telefono válido" required>
+					<label for="telefono" >Celular</label>
+				  	<input id="telefono" type="tel" name="telefono" inputmode="decimal" placeholder="011-4444-9999" data-rule="minlen:7" data-msg="Por favor ingrese un telefono válido" required>
 				</fieldset>
 				<fieldset>
-					<label for='contacto'></label>
-					<select name='contacto' tabindex="0" required>
-                        <option value=''>¿Cómo me conociste?</option>
-                        <option value='referidos'>Referidos</option>
-                        <option value='instagram'>Instagram</option>
-                        <option value='google'>Google</option>
-                        <option value='youtube'>Youtube</option>
-                        <option value='facebook'>Facebook</option>
+					<label for="contacto"></label>
+					<select id="contacto" name="contacto" tabindex="0" required>
+                        <option value="">¿Cómo me conociste?</option>
+                        <option value="referidos">Referidos</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="google">Google</option>
+                        <option value="youtube">Youtube</option>
+                        <option value="facebook">Facebook</option>
                     </select>
 				</fieldset>
 				<fieldset>
-					<label for='mensaje' >¿Cuáles son tus objetivos o metas?</label>
-					<textarea name='mensaje' placeholder="Ingrese aquí su mensaje" required></textarea>
+					<label for="mensaje" >¿Cuáles son tus objetivos o metas?</label>
+					<textarea id="mensaje" name="mensaje" placeholder="Ingrese aquí su mensaje" required></textarea>
 				</fieldset>
 				<fieldset>
-				  <button name='submit' type="submit" value="enviar" class="contacto-submit" data-submit="...Enviando">Enviar</button>
+				  <button type="submit" value="enviar" class="contacto-submit" data-submit="...Enviando">Enviar</button>
 				</fieldset>
 			</form>
 		</article>
