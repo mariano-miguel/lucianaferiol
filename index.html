@@ -27,7 +27,6 @@
 	<meta property="og:image" content="./img/cover.jpg"/>
 	<meta property="og:description" content="Nutrición Integral: Especialista en trastornos funcionales digestivos y Deportiva. Antropometrista ISAK II"/>
 	<meta name="google-site-verification" content="iCvHDSdJZUoi28OHfTANj6UGyXG9VyHfDKgNvSgIphk"/>
-	<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
 </head>
 <body>
 	<nav class="topnav" id="myTopnav">
@@ -232,22 +231,22 @@
 	<section class="contacto">
 		<article>
 			<h2>CONTACTO</h2>
-			<form class="contacto-form" action="form.php" method="post">
+			<form class="contacto-form"  action="https://formspree.io/xbjzwnrq" method="post">
 				<fieldset>
 					<label for='nombre'>Nombre completo</label>
-				  	<input type="text" name='nombre' placeholder="Nombre Apellido">
+				  	<input type="text" name='nombre' placeholder="Nombre Apellido" data-rule="minlen:4" data-msg="Por favor ingrese su nombre completo" required>
 				</fieldset>
 				<fieldset>
 					<label for='email' >Correo Electrónico</label>
-					<input type="text" name='email' placeholder="tu@email.com">
+					<input type="text" name='email' placeholder="tu@email.com" data-rule="email" data-msg="Por favor ingrese un email válido" required>
 				</fieldset>
 				<fieldset>
 					<label for='telefono' >Celular</label>
-				  	<input type="tel" name='telefono' inputmode="decimal" placeholder="011-4444-9999">
+				  	<input type="tel" name='telefono' inputmode="decimal" placeholder="011-4444-9999" data-rule="minlen:7" data-msg="Por favor ingrese un telefono válido" required>
 				</fieldset>
 				<fieldset>
 					<label for='contacto'></label>
-					<select name='contacto' tabindex="0">
+					<select name='contacto' tabindex="0" required>
                         <option value=''>¿Cómo me conociste?</option>
                         <option value='referidos'>Referidos</option>
                         <option value='instagram'>Instagram</option>
@@ -258,7 +257,7 @@
 				</fieldset>
 				<fieldset>
 					<label for='mensaje' >¿Cuáles son tus objetivos o metas?</label>
-					<textarea name='mensaje' placeholder="Ingrese aquí su mensaje "></textarea>
+					<textarea name='mensaje' placeholder="Ingrese aquí su mensaje" required></textarea>
 				</fieldset>
 				<fieldset>
 				  <button name='submit' type="submit" value="enviar" class="contacto-submit" data-submit="...Enviando">Enviar</button>
@@ -286,14 +285,5 @@
 		  }
 		}
 	</script>
-<!-- 	<script language="JavaScript">
-		// Code for validating the form
-		// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-		// for details
-		var frmvalidator  = new Validator("contacto-form");
-		frmvalidator.addValidation("name","req","Please provide your name"); 
-		frmvalidator.addValidation("email","req","Please provide your email"); 
-		frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-	</script> -->
 </body>
 </html>
