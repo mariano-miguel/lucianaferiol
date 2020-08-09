@@ -14,7 +14,9 @@
 
 .header {
   text-align: center;
-  color: black;
+  color: #000;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
   display: block;
   width: 100%;
 }
@@ -28,6 +30,23 @@ h2 {
   display: block;
 }
 
+.topnav a .icons:first-child{
+  display: block;
+  height: 20px;
+  margin-left:10px;
+}
+.topnav a .icons:last-child {
+  display: none;
+  height: 20px;
+  margin-left:10px;     
+}
+.topnav a:hover .icons:last-child {
+  display: block;
+
+}
+.topnav a:hover .icons:first-child {
+  display: none;  
+}
 .clear {
   width:100%;
   height: 44px;
@@ -41,7 +60,7 @@ ul{
 
 .topnav {
   overflow: hidden;
-  background-color: #D5FACF;
+  background-color: #DBFFE5; /*#D5FACF*/
   width: 100%;
   position: fixed;
   z-index: 5;
@@ -58,13 +77,9 @@ ul{
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a:active {
-  background-color: #4CAF50;
-  color: white;
+  color: #64B058;
+  text-shadow: 1px 1px #F0F0F0;
+  font-weight: bold;
 }
 
 .topnav .icon {
@@ -102,14 +117,6 @@ ul{
   -ms-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.3);
-}
-
-.sobre-mi-img:hover {
-  cursor: pointer;
-  -webkit-transform: rotate(-7deg);
-  -moz-transform: rotate(-7deg);
-  -o-transform: rotate(-7deg);
-  transform: rotate(-7deg);
 }
 
 .sobre-mi-copy {
@@ -166,8 +173,11 @@ p, ul {
 }
 .notas-card {
   width: 15%;
-  padding: 2% 3%;
+  margin: 2% 3%;
   text-align: center;
+}
+.notas-card a{
+  text-decoration: none;
 }
 .notas-card img {
   width: 100%;
@@ -180,6 +190,22 @@ p, ul {
 }
 .notas-card .card-copy p {
   font-size: 1em;
+  color: black;
+}
+
+.notas-card:hover img {
+  -webkit-transition:box-shadow 0.4s ease-in-out;
+  -moz-transition:box-shadow 0.4s ease-in-out;
+  transition:box-shadow 0.4s ease-in-out;
+  box-shadow: 0 4px 8px 10px rgba(0,0,0,0.2);
+  cursor: pointer; 
+}
+.notas-card:hover .card-copy p {
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition:font-weight 0.4s ease-in-out;
+  -moz-transition:font-weight 0.4s ease-in-out;
+  transition:font-weight 0.4s ease-in-out;
 }
 
 .notas-section button {
@@ -201,13 +227,15 @@ p, ul {
 .notas-section button:hover {
   background-color: #4BA746;
 }
+.notas-section button:hover a {
+  text-shadow: 1px 1px 1px #000;
+}
 
 .notas-section button:active {
   background-color: #4BA746;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
 .notas-section button a {
   text-decoration: none;
   color: #fff;
@@ -414,6 +442,9 @@ form fieldset {
   .topnav a {
     font-size: 1.1em;
   }
+  .topnav .icons {
+  height: 18px;
+  }
   p, ul {
     font-size: 1em;
   }
@@ -443,6 +474,9 @@ form fieldset {
   .topnav a {
     font-size: 0.9em;
   }
+  .topnav .icons {
+  height: 16px;
+  }
   p, ul {
     font-size: 0.9em;
   }
@@ -452,7 +486,7 @@ form fieldset {
   }
   .notas-card {
     width: 21%;
-    padding: 2% 5%;
+    margin: 2% 5%;
   }
   .notas-card .card-copy p {
     font-size: 0.9em;
@@ -479,8 +513,10 @@ form fieldset {
 
 
 @media only screen and (max-width: 768px) {
-
-  .topnav a:not(:first-child) {
+  .topnav .icons {
+    margin-left: 0;
+  }
+  .topnav span a{
     display: none;
   }
   .topnav a.icon {
@@ -523,7 +559,7 @@ form fieldset {
   }
   .notas-card {
     width: 25%;
-    padding: 2% 3%;
+    margin: 2% 3%;
   }
   .notas-card .card-copy p {
     font-size: 0.8em;
@@ -542,6 +578,10 @@ form fieldset {
   form fieldset {
     max-width: 45%;
   }
+  .contacto {
+    background-attachment: scroll;
+  }
+  
   .contacto-form button[type="submit"] {
     width: 60%;
   }

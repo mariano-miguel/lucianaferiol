@@ -30,9 +30,9 @@
 </head>
 <body>
 	<nav class="topnav" id="myTopnav">
+			<a href="index.html"><img alt="Ícono de inicio negro" class="icons" src="./img/icon-inicio-negro.png"><img alt="Ícono de inicio verde" class="icons" src="./img/icon-inicio-verde.png"></a>
 		<span onclick="myFunction()">
-			<a href="index.html">Inicio</a>
-			<a href="#sobre-mi">Sobre mi</a>
+			<a href="#sobre-mi">Sobre mí</a>
 			<a href="#servicios">Servicios</a>
 			<a href="#notas-recetas">Notas y Recetas</a>
 			<a href="#ubicacion">Ubicación</a>
@@ -55,7 +55,7 @@
 	</section>
 	<a id="navigation" name="sobre-mi"></a>
 	<article class="header">
-		<h2>SOBRE MI</h2>
+		<h2>SOBRE MÍ</h2>
 	</article>		
 	<section class="sobre-mi">
 		<figure class="sobre-mi-box">
@@ -67,10 +67,10 @@
 			<picture>
 		</figure>
 		<article class="sobre-mi-copy">
-			<p>Hola! Mi nombre es Luciana Feriol, soy Licenciada en Nutrición recibida en la Fundación Barcelo, con Posgrado en Nutrición Deportiva, Antropometrista certificada en ISAK II y actualmente formándome en Psiconeuroinmunologia en España.
-			<p>La nutrición conciente, el contacto con la naturaleza, el poder de los alimentos reales, me hacen creer en que es posible reparar alimentaciones, amigarnos con las comidas y con nosotros.</p>
-			<p>Cómo trabajo:</p>
-			<p>La alimentación es un factor clave en la salud de las personas, para que ello suceda busco conocer en detalle la alimentación del paciente, su estilo de vida y crear un plan de alimentación que se adapte a sus gustos, necesidades, emociones y asi lograr su mejor versión.</p>
+			<p>Hola! Mi nombre es Luciana Feriol, soy Licenciada en Nutrición recibida en la Fundación Barceló MN 4787, con postgrado en Nutrición Deportiva, Antropometrista certificada en ISAK II y actualmente realizando el postgrado Experto Universitario en Psiconeuroinmunología Clínica y Evidencia Científica Online.
+			<p>La nutrición consciente, el contacto con la naturaleza, el poder de los alimentos reales, me hacen creer en que es posible reparar alimentaciones, amigarnos con las comidas y con nosotros.</p>
+			<p>¿Cómo trabajo?</p>
+			<p>La alimentación es un factor clave en la salud de las personas, para ello busco conocer en detalle la alimentación del paciente, su estilo de vida y crear un plan de alimentación que se adapte a sus gustos, necesidades, emociones y asi lograr su mejor versión.</p>
 		</article>
 	</section>
 	<a id="navigation" name="servicios"></a>
@@ -100,7 +100,7 @@
 				<picture>
 			</figure>
 			<h3>Nutrición Integral</h3>
-			<p>Mediante asesoría en las consultas puedo acompañarte en el camino de la nutrición conciente y encontrar la alimentación que está hecha a medida para vos, teniendo en cuenta la sintomatología del paciente, sus hábitos y estilo de vida.</p>
+			<p>Mediante asesoría en las consultas puedo acompañarte en el camino de la nutrición consciente y encontrar la alimentación que está hecha a medida para vos, teniendo en cuenta la sintomatología del paciente, sus hábitos y estilo de vida.</p>
 			<p>Buscando generar conocimiento de los alimentos naturales para sentirse bien y así lograr mejorar la relación con la comida, lograr la confianza en ella y sobretodo un equilibrio que te permita disfrutar y vivir plenamente.
 			</p>
 		</article>
@@ -127,7 +127,7 @@
 				<picture>
 			</figure>
 			<h3>Consultorio Online</h3>
-				<p>Vivís lejos o sos del interior, no tenés tiempo, también podés tener tu consulta online. Las consultas son iguales a las presenciales, vamos a establecer objetivos que se ajustarán a tus características, necesidades, requerimientos, gustos, pero principalmente nos enfocaremos en MEJORAR TU CALIDAD DE VIDA a través de la alimentación. Se realizan a partir de videollamada.
+				<p>Si vivís lejos, sos del interior o no tenés tiempo, también podés tener tu consulta online. Las consultas son iguales a las presenciales, vamos a establecer objetivos que se ajustarán a tus características, necesidades, requerimientos, gustos, pero principalmente nos enfocaremos en MEJORAR TU CALIDAD DE VIDA a través de la alimentación. Se realizan a partir de videollamada.
 				</p>
 		</article>
 	</section>
@@ -137,80 +137,96 @@
 	</article>	
 	<section class="notas-section">
 		<section class="notas-box">
-			<article class="notas-card">
-				<figure>
-					<img loading="lazy" alt="Todo me cae mal" src="./img/notas-recetas/todo-me-cae-mal-1-1.jpg">
-					<figcaption></figcaption>
-				</figure>
-				<article class="card-copy">
-					<p>Todo me cae mal</p>
-				</article>
+			<article class="notas-card" ontouchstart="this.classList.toggle('hover');">
+				<a href="n-r/notas-todo-me-cae-mal.html" class="href">
+					<figure>
+						<img loading="lazy" alt="Todo me cae mal" src="./img/notas-recetas/todo-me-cae-mal-1-1.jpg">
+						<figcaption></figcaption>
+					</figure>
+					<article class="card-copy">
+						<p>Todo me cae mal</p>
+					</article>
+				</a>
 			</article>
-			<article class="notas-card">
-				<figure>
-					<img loading="lazy" alt="Nutrición Antiinflamatoria" src="./img/notas-recetas/nutricion-antiinflamatoria-1-1.jpg">
-					<figcaption></figcaption>
-				</figure>
-				<article class="card-copy">
-					<p>Alimentación Antiinflamatoria</p>
-				</article>				
+			<article class="notas-card" ontouchstart="this.classList.toggle('hover');">
+				<a href="n-r/notas-nutricion-antiinflamatoria.html" class="href">
+					<figure>
+						<img loading="lazy" alt="Nutrición Antiinflamatoria" src="./img/notas-recetas/nutricion-antiinflamatoria-1-1.jpg">
+						<figcaption></figcaption>
+					</figure>
+					<article class="card-copy">
+						<p>Alimentación Antiinflamatoria</p>
+					</article>
+				</a>	
 			</article>
-			<article class="notas-card">
-				<figure>
-					<img loading="lazy" alt="Sobrecrecimiento Bacteriano" src="./img/notas-recetas/sobrecrecimiento-bacteriano-1-1.jpg">
-					<figcaption></figcaption>
-				</figure>
-				<article class="card-copy">
-					<p>Sobrecrecimiento Bacteriano</p>
-				</article>								
+			<article class="notas-card" ontouchstart="this.classList.toggle('hover');">
+				<a href="n-r/notas-sobrecrecimiento-bacteriano.html" class="href">
+					<figure>
+						<img loading="lazy" alt="Sobrecrecimiento Bacteriano" src="./img/notas-recetas/sobrecrecimiento-bacteriano-1-1.jpg">
+						<figcaption></figcaption>
+					</figure>
+					<article class="card-copy">
+						<p>Sobrecrecimiento Bacteriano</p>
+					</article>	
+				</a>							
 			</article>
-			<article class="notas-card">
-				<figure>
-					<img loading="lazy" alt="Estrés" src="./img/notas-recetas/estres-1-1.jpg">
-					<figcaption></figcaption>
-				</figure>
-				<article class="card-copy">
-					<p>No todo es estrés</p>
-				</article>
+			<article class="notas-card" ontouchstart="this.classList.toggle('hover');">
+				<a href="n-r/notas-no-todo-es-estres.html" class="href">
+					<figure>
+						<img loading="lazy" alt="Estrés" src="./img/notas-recetas/estres-1-1.jpg">
+						<figcaption></figcaption>
+					</figure>
+					<article class="card-copy">
+						<p>No todo es estrés</p>
+					</article>
+				</a>
 			</article>
-			<article class="notas-card">
-				<figure>
-					<img loading="lazy" alt="Pan de Arroz y Trigo Sarraceno" src="./img/notas-recetas/pan-arroz-y-trigo-sarraceno-1-1.jpg">
-					<figcaption></figcaption>
-				</figure>
-				<article class="card-copy">
-					<p>Pan de Arroz y Trigo Sarraceno</p>
-				</article>			
+			<article class="notas-card" ontouchstart="this.classList.toggle('hover');">
+				<a href="n-r/recetas-pan-arroz-y-trigo-sarraceno.html" class="href">
+					<figure>
+						<img loading="lazy" alt="Pan de Arroz y Trigo Sarraceno" src="./img/notas-recetas/pan-arroz-y-trigo-sarraceno-1-1.jpg">
+						<figcaption></figcaption>
+					</figure>
+					<article class="card-copy">
+						<p>Pan de Arroz y Trigo Sarraceno</p>
+					</article>	
+				</a>		
 			</article>
-			<article class="notas-card">
-				<figure>
-					<img loading="lazy" alt="Granola" src="./img/notas-recetas/granola-1-1.jpg">
-					<figcaption></figcaption>
-				</figure>
-				<article class="card-copy">
-					<p>Granola</p>
-				</article>
+			<article class="notas-card" ontouchstart="this.classList.toggle('hover');">
+				<a href="n-r/recetas-granola.html" class="href">
+					<figure>
+						<img loading="lazy" alt="Granola" src="./img/notas-recetas/granola-1-1.jpg">
+						<figcaption></figcaption>
+					</figure>
+					<article class="card-copy">
+						<p>Granola</p>
+					</article>
+				</a>
 			</article>
-			<article class="notas-card">
-				<figure>
-					<img loading="lazy" alt="Budín de banana y chocolate" src="./img/notas-recetas/budin-banana-chocolate-1-1.jpg">
-					<figcaption></figcaption>
-				</figure>
-				<article class="card-copy">
-					<p>Budín de Banana y Chocolate</p>
-				</article>
+			<article class="notas-card" ontouchstart="this.classList.toggle('hover');">
+				<a href="n-r/recetas-budin-banana-chocolate.html" class="href">
+					<figure>
+						<img loading="lazy" alt="Budín de banana y chocolate" src="./img/notas-recetas/budin-banana-chocolate-1-1.jpg">
+						<figcaption></figcaption>
+					</figure>
+					<article class="card-copy">
+						<p>Budín de Banana y Chocolate</p>
+					</article>
+				</a>
 			</article>
-			<article class="notas-card">
-				<figure>
-					<img loading="lazy" alt="Risotto de Trigo Sarraceno" src="./img/notas-recetas/risotto-trigo-sarraceno-1-1.jpg">
-					<figcaption></figcaption>
-				</figure>
-				<article class="card-copy">
-					<p>Risotto de Trigo Sarraceno</p>
-				</article>
+			<article class="notas-card" ontouchstart="this.classList.toggle('hover');">
+				<a href="n-r/recetas-risotto-trigo-sarraceno.html" class="href">
+					<figure>
+						<img loading="lazy" alt="Risotto de Trigo Sarraceno" src="./img/notas-recetas/risotto-trigo-sarraceno-1-1.jpg">
+						<figcaption></figcaption>
+					</figure>
+					<article class="card-copy">
+						<p>Risotto de Trigo Sarraceno</p>
+					</article>
+				</a>
 			</article>
 		</section>
-		<button><a href="notas-recetas.html" class="href">VER MÁS</a></button>
+		<button><a href="notas-recetas.html" class="href">VER TODAS</a></button>
 	</section>
 	<a id="navigation" name="ubicacion"></a>
 	<article class="header">
@@ -277,12 +293,12 @@
 	</footer>
 	<script>
 		function myFunction() {
-		  var x = document.getElementById("myTopnav");
-		  if (x.className === "topnav") {
-		    x.className += " responsive";
-		  } else {
-		    x.className = "topnav";
-		  }
+			var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+				x.className += " responsive";
+				} else {
+				x.className = "topnav";
+			}
 		}
 	</script>
 </body>
