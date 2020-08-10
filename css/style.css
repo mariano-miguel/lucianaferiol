@@ -20,7 +20,16 @@
   display: block;
   width: 100%;
 }
-
+hr {
+  align-items: center;
+  width: 20%;
+  height: 3px;
+  background-color: #DBFFE5;
+  border: none;
+}
+#navigation hr {
+  width: 60%;
+}
 h2 {
   font-size: 1.8em;
 }
@@ -32,12 +41,12 @@ h2 {
 
 .topnav a .icons:first-child{
   display: block;
-  height: 20px;
+  height: 18px;
   margin-left:10px;
 }
 .topnav a .icons:last-child {
   display: none;
-  height: 20px;
+  height: 18px;
   margin-left:10px;     
 }
 .topnav a:hover .icons:last-child {
@@ -100,7 +109,7 @@ ul{
   justify-content: center;
   align-items: center;
   padding:5%;
-  margin-bottom: 5%;
+  background: linear-gradient(0deg, #DBFFE5 0%, #fff 100%);
 }
 
 .sobre-mi-box {
@@ -259,7 +268,7 @@ p, ul {
 }
 .ubicacion-copy {
   width: 35%;
-  background-color: #D5FACF;
+  background-color:#DBFFE5;
   padding: 3%;
   margin: 2.5%;
   transform: rotate(-5deg);
@@ -442,8 +451,9 @@ form fieldset {
   .topnav a {
     font-size: 1.1em;
   }
-  .topnav .icons {
-  height: 18px;
+  .topnav a .icons:first-child,
+  .topnav a .icons:last-child {
+  height: 16px;    
   }
   p, ul {
     font-size: 1em;
@@ -513,7 +523,8 @@ form fieldset {
 
 
 @media only screen and (max-width: 768px) {
-  .topnav .icons {
+  .topnav a .icons:first-child,
+  .topnav a .icons:last-child {
     margin-left: 0;
   }
   .topnav span a{
