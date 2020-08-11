@@ -112,7 +112,6 @@ ul{
   background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(219,255,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(219,255,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbffe5',GradientType=0 ); /* IE6-9 */
-
 }
 
 .sobre-mi-box {
@@ -450,6 +449,9 @@ form fieldset {
   h2 {
     font-size: 1.4em;
   }
+  hr {
+    width: 25%;
+  }
 
   .topnav a {
     font-size: 1.1em;
@@ -483,7 +485,9 @@ form fieldset {
 }
 
 @media only screen and  (max-width: 992px) {
-
+  hr {
+    width: 30%;
+  }
   .topnav a {
     font-size: 0.9em;
   }
@@ -526,6 +530,9 @@ form fieldset {
 
 
 @media only screen and (max-width: 768px) {
+  hr {
+    width: 50%;
+  }
   .topnav a .icons:first-child,
   .topnav a .icons:last-child {
     margin-left: 0;
@@ -555,6 +562,14 @@ form fieldset {
   }
   .sobre-mi {
     flex-wrap: wrap;
+    background-image: url("../img/gradient.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
   }
   .sobre-mi-box {
     width: 50%;
@@ -614,6 +629,9 @@ form fieldset {
 }
 
 @media only screen and (max-width: 480px) {
+  hr {
+    width: 75%;
+  }
   .sobre-mi-box {
     width: 70%;
   }
