@@ -111,7 +111,7 @@
 }
 
 .texto a:hover {
-  color: #64B058;
+  color: #4BA746;
 
 }
 
@@ -270,7 +270,8 @@
 }
 
 .back .inner a:hover {
-  color: #D5FACF;
+  color: #4BA746;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 /*@media screen and (max-width: 64rem){

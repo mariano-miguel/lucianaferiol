@@ -67,7 +67,7 @@ ul{
 
 .topnav {
   overflow: hidden;
-  background-color: #DBFFE5; /*#D5FACF*/
+  background-color: #DBFFE5;
   width: 100%;
   position: fixed;
   z-index: 5;
@@ -84,7 +84,7 @@ ul{
 }
 
 .topnav a:hover {
-  color: #64B058;
+  color: #4BA746;
   text-shadow: 1px 1px #F0F0F0;
   font-weight: bold;
 }
@@ -237,6 +237,9 @@ p, ul {
 
 .notas-section button:hover {
   background-color: #4BA746;
+  -webkit-transition:background 0.3s ease-in-out;
+  -moz-transition:background 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
 }
 .notas-section button:hover a {
   text-shadow: 1px 1px 1px #000;
@@ -363,6 +366,7 @@ form fieldset {
 .contacto-form button[type="submit"]:hover {
   background:#4BA746;
   color:#FFF;
+  text-shadow: 1px 1px 1px #000;
   -webkit-transition:background 0.3s ease-in-out;
   -moz-transition:background 0.3s ease-in-out;
   transition:background-color 0.3s ease-in-out;
@@ -403,7 +407,7 @@ form fieldset {
   justify-content: center;
   align-items: center;
   list-style: none;
-  background-color: #D5FACF;
+  background-color: #DBFFE5;
   width: 100%;
   font-size: 1.2em;
 }
